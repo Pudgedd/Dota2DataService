@@ -1,0 +1,507 @@
+13:42:52.784 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Starting Dota2DataServiceApplication on luokunduodeMacBook-Pro.local with PID 940 (/Users/kendall/GitRepo/Dota2DataService/target/classes started by kendall in /Users/kendall/GitRepo/Dota2DataService)
+13:42:52.790 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - The following profiles are active: dev
+13:42:52.842 Dota2DataService [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f6f61c8: startup date [Tue Jul 23 13:42:52 CST 2019]; root of context hierarchy
+13:42:53.630 Dota2DataService [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:42:53.976 Dota2DataService [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+13:42:54.042 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+13:42:54.044 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+13:42:54.044 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+13:42:54.044 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+13:42:54.044 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+13:42:54.045 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+13:42:54.045 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+13:42:54.045 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+13:42:54.045 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [application.yml] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+13:42:54.096 Dota2DataService [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+13:42:54.162 Dota2DataService [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9013e9cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:42:54.332 Dota2DataService [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+13:42:54.334 Dota2DataService [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+13:42:54.699 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+13:42:54.713 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+13:42:54.724 Dota2DataService [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:42:54.724 Dota2DataService [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+13:42:54.728 Dota2DataService [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kendall/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13:42:54.823 Dota2DataService [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:42:54.823 Dota2DataService [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1981 ms
+13:42:54.918 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+13:42:54.919 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+13:42:54.923 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:42:54.923 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:42:54.923 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:42:54.923 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:42:54.923 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+13:42:55.178 Dota2DataService [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+13:42:55.263 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:42:55.573 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f6f61c8: startup date [Tue Jul 23 13:42:52 CST 2019]; root of context hierarchy
+13:42:55.639 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueDetail.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueDetail(java.lang.Integer)
+13:42:55.639 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueList.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueList(java.lang.Integer,java.lang.Integer)
+13:42:55.642 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:42:55.642 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:42:55.674 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:42:55.674 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:42:55.694 Dota2DataService [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionController
+13:42:55.883 Dota2DataService [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+13:42:56.290 Dota2DataService [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+13:42:57.083 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+13:42:57.100 Dota2DataService [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+13:42:57.100 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+13:42:57.101 Dota2DataService [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+13:42:57.102 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+13:42:57.102 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+13:42:57.102 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+13:42:57.102 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@75cacb3e
+13:42:57.253 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:42:57.255 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+13:42:57.255 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+13:42:57.261 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+13:42:57.262 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+13:42:57.268 Dota2DataService [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+13:42:57.268 Dota2DataService [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+13:42:57.268 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+13:42:57.277 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+13:42:57.307 Dota2DataService [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:42:57.337 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+13:42:57.342 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Started Dota2DataServiceApplication in 25.003 seconds (JVM running for 31.367)
+13:43:09.516 Dota2DataService [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:43:09.517 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:43:09.538 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+15:03:16.603 Dota2DataService [Thread-53] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f6f61c8: startup date [Tue Jul 23 13:42:52 CST 2019]; root of context hierarchy
+15:03:16.611 Dota2DataService [Thread-53] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+15:03:16.613 Dota2DataService [Thread-53] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+15:03:16.614 Dota2DataService [Thread-53] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+15:03:16.614 Dota2DataService [Thread-53] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+15:03:16.615 Dota2DataService [Thread-53] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+15:03:16.615 Dota2DataService [Thread-53] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+15:03:16.660 Dota2DataService [Thread-53] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+15:03:16.662 Dota2DataService [Thread-53] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+15:03:16.676 Dota2DataService [Thread-53] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+15:03:16.677 Dota2DataService [Thread-53] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+15:04:24.652 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Starting Dota2DataServiceApplication on luokunduodeMacBook-Pro.local with PID 1034 (/Users/kendall/GitRepo/Dota2DataService/target/classes started by kendall in /Users/kendall/GitRepo/Dota2DataService)
+15:04:24.656 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - The following profiles are active: dev
+15:04:24.708 Dota2DataService [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71454b9d: startup date [Tue Jul 23 15:04:24 CST 2019]; root of context hierarchy
+15:04:25.265 Dota2DataService [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+15:04:25.560 Dota2DataService [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+15:04:25.619 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+15:04:25.620 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+15:04:25.620 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+15:04:25.621 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+15:04:25.621 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+15:04:25.621 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+15:04:25.621 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+15:04:25.621 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+15:04:25.621 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [application.yml] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+15:04:25.669 Dota2DataService [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+15:04:25.731 Dota2DataService [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1277c712] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:04:25.861 Dota2DataService [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+15:04:25.863 Dota2DataService [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+15:04:26.187 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:04:26.197 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:04:26.206 Dota2DataService [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:04:26.206 Dota2DataService [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+15:04:26.210 Dota2DataService [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kendall/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15:04:26.299 Dota2DataService [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:04:26.299 Dota2DataService [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1591 ms
+15:04:26.388 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+15:04:26.389 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+15:04:26.392 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:04:26.393 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:04:26.393 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:04:26.393 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:04:26.393 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+15:04:26.602 Dota2DataService [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+15:04:26.678 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:04:26.969 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71454b9d: startup date [Tue Jul 23 15:04:24 CST 2019]; root of context hierarchy
+15:04:27.027 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueList.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueList(java.lang.Integer,java.lang.Integer)
+15:04:27.028 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueDetail.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueDetail(java.lang.Integer)
+15:04:27.031 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:04:27.032 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:04:27.065 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:04:27.065 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:04:27.083 Dota2DataService [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionController
+15:04:27.251 Dota2DataService [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+15:04:27.600 Dota2DataService [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:04:28.226 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:04:28.237 Dota2DataService [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:04:28.237 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+15:04:28.238 Dota2DataService [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:04:28.239 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:04:28.239 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+15:04:28.239 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+15:04:28.239 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@18989e0
+15:04:28.378 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+15:04:28.379 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+15:04:28.380 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+15:04:28.387 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+15:04:28.388 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+15:04:28.392 Dota2DataService [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+15:04:28.392 Dota2DataService [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+15:04:28.392 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+15:04:28.399 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:04:28.421 Dota2DataService [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:04:28.438 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:04:28.443 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Started Dota2DataServiceApplication in 24.185 seconds (JVM running for 29.98)
+15:04:39.122 Dota2DataService [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:04:39.122 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+15:04:39.144 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+17:25:34.118 Dota2DataService [Thread-50] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71454b9d: startup date [Tue Jul 23 15:04:24 CST 2019]; root of context hierarchy
+17:25:34.120 Dota2DataService [Thread-50] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+17:25:34.120 Dota2DataService [Thread-50] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:25:34.121 Dota2DataService [Thread-50] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+17:25:34.121 Dota2DataService [Thread-50] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+17:25:34.121 Dota2DataService [Thread-50] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:25:34.122 Dota2DataService [Thread-50] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+17:25:34.149 Dota2DataService [Thread-50] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+17:25:34.150 Dota2DataService [Thread-50] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+17:25:34.156 Dota2DataService [Thread-50] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:25:34.156 Dota2DataService [Thread-50] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+17:26:10.879 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Starting Dota2DataServiceApplication on luokunduodeMacBook-Pro.local with PID 1093 (/Users/kendall/GitRepo/Dota2DataService/target/classes started by kendall in /Users/kendall/GitRepo/Dota2DataService)
+17:26:10.884 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - The following profiles are active: dev
+17:26:10.918 Dota2DataService [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b6690c0: startup date [Tue Jul 23 17:26:10 CST 2019]; root of context hierarchy
+17:26:11.467 Dota2DataService [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:26:11.761 Dota2DataService [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+17:26:11.823 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+17:26:11.824 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:26:11.824 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:26:11.825 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+17:26:11.825 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+17:26:11.825 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+17:26:11.825 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:26:11.825 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:26:11.825 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [application.yml] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+17:26:11.871 Dota2DataService [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+17:26:11.936 Dota2DataService [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a7ccab8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:26:12.065 Dota2DataService [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+17:26:12.067 Dota2DataService [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+17:26:12.382 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:26:12.393 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:26:12.401 Dota2DataService [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:26:12.402 Dota2DataService [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+17:26:12.405 Dota2DataService [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kendall/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+17:26:12.489 Dota2DataService [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:26:12.489 Dota2DataService [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1572 ms
+17:26:12.579 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+17:26:12.580 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+17:26:12.583 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:26:12.584 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:26:12.584 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:26:12.584 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:26:12.584 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+17:26:12.784 Dota2DataService [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+17:26:12.856 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:26:13.134 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b6690c0: startup date [Tue Jul 23 17:26:10 CST 2019]; root of context hierarchy
+17:26:13.193 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueList.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueList(java.lang.Integer,java.lang.Integer)
+17:26:13.194 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueDetail.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueDetail(java.lang.Integer)
+17:26:13.196 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:26:13.196 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:26:13.230 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:26:13.230 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:26:13.250 Dota2DataService [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionController
+17:26:13.431 Dota2DataService [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+17:26:13.792 Dota2DataService [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:26:14.420 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+17:26:14.430 Dota2DataService [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:26:14.430 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+17:26:14.431 Dota2DataService [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+17:26:14.432 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:26:14.432 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+17:26:14.432 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+17:26:14.432 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@399af6dc
+17:26:14.576 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:26:14.577 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+17:26:14.578 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+17:26:14.584 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+17:26:14.585 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+17:26:14.590 Dota2DataService [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+17:26:14.590 Dota2DataService [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+17:26:14.590 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+17:26:14.598 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:26:14.622 Dota2DataService [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:26:14.643 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:26:14.650 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Started Dota2DataServiceApplication in 24.113 seconds (JVM running for 29.793)
+17:26:17.712 Dota2DataService [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:26:17.712 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:26:17.733 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+17:30:26.488 Dota2DataService [Thread-51] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b6690c0: startup date [Tue Jul 23 17:26:10 CST 2019]; root of context hierarchy
+17:30:26.493 Dota2DataService [Thread-51] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+17:30:26.494 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:30:26.494 Dota2DataService [Thread-51] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+17:30:26.494 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+17:30:26.494 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:30:26.495 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+17:30:26.552 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+17:30:26.553 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+17:30:26.560 Dota2DataService [Thread-51] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:30:26.561 Dota2DataService [Thread-51] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+17:31:05.289 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Starting Dota2DataServiceApplication on luokunduodeMacBook-Pro.local with PID 1110 (/Users/kendall/GitRepo/Dota2DataService/target/classes started by kendall in /Users/kendall/GitRepo/Dota2DataService)
+17:31:05.293 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - The following profiles are active: dev
+17:31:05.325 Dota2DataService [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@25bfcafd: startup date [Tue Jul 23 17:31:05 CST 2019]; root of context hierarchy
+17:31:05.863 Dota2DataService [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:31:06.149 Dota2DataService [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+17:31:06.208 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+17:31:06.209 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:31:06.210 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:31:06.210 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+17:31:06.210 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+17:31:06.210 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+17:31:06.210 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:31:06.210 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:31:06.210 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [application.yml] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+17:31:06.254 Dota2DataService [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+17:31:06.316 Dota2DataService [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11e1f3cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:31:06.441 Dota2DataService [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+17:31:06.443 Dota2DataService [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+17:31:06.756 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:31:06.766 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:31:06.775 Dota2DataService [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:31:06.775 Dota2DataService [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+17:31:06.778 Dota2DataService [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kendall/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+17:31:06.861 Dota2DataService [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:31:06.861 Dota2DataService [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1536 ms
+17:31:06.947 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+17:31:06.948 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+17:31:06.951 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:31:06.951 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:31:06.951 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:31:06.951 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:31:06.952 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+17:31:07.138 Dota2DataService [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+17:31:07.207 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:31:07.478 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@25bfcafd: startup date [Tue Jul 23 17:31:05 CST 2019]; root of context hierarchy
+17:31:07.536 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueDetail.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueDetail(java.lang.Integer)
+17:31:07.537 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueList.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueList(java.lang.Integer,java.lang.Integer)
+17:31:07.540 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:31:07.541 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:31:07.573 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:31:07.573 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:31:07.591 Dota2DataService [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionController
+17:31:07.762 Dota2DataService [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+17:31:08.113 Dota2DataService [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:31:08.746 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+17:31:08.757 Dota2DataService [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:31:08.757 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+17:31:08.758 Dota2DataService [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+17:31:08.759 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:31:08.759 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+17:31:08.759 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+17:31:08.759 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@6dd20ec9
+17:31:08.902 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:31:08.903 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+17:31:08.903 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+17:31:08.911 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+17:31:08.913 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+17:31:08.918 Dota2DataService [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+17:31:08.918 Dota2DataService [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+17:31:08.918 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+17:31:08.925 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:31:08.946 Dota2DataService [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:31:08.965 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:31:08.971 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Started Dota2DataServiceApplication in 24.034 seconds (JVM running for 29.677)
+17:31:26.772 Dota2DataService [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:31:26.772 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:31:26.795 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+17:32:17.490 Dota2DataService [Thread-51] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@25bfcafd: startup date [Tue Jul 23 17:31:05 CST 2019]; root of context hierarchy
+17:32:17.495 Dota2DataService [Thread-51] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+17:32:17.496 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:32:17.496 Dota2DataService [Thread-51] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+17:32:17.497 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+17:32:17.497 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:32:17.499 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+17:32:17.522 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+17:32:17.522 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+17:32:17.535 Dota2DataService [Thread-51] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:32:17.535 Dota2DataService [Thread-51] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+17:32:57.661 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Starting Dota2DataServiceApplication on luokunduodeMacBook-Pro.local with PID 1118 (/Users/kendall/GitRepo/Dota2DataService/target/classes started by kendall in /Users/kendall/GitRepo/Dota2DataService)
+17:32:57.665 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - The following profiles are active: dev
+17:32:57.696 Dota2DataService [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46268f08: startup date [Tue Jul 23 17:32:57 CST 2019]; root of context hierarchy
+17:32:58.246 Dota2DataService [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:32:58.519 Dota2DataService [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+17:32:58.580 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+17:32:58.581 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:32:58.581 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:32:58.582 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+17:32:58.582 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+17:32:58.582 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+17:32:58.582 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:32:58.582 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:32:58.582 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [application.yml] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+17:32:58.626 Dota2DataService [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+17:32:58.689 Dota2DataService [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dce798ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:32:58.827 Dota2DataService [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+17:32:58.829 Dota2DataService [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+17:32:59.142 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:32:59.152 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:32:59.160 Dota2DataService [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:32:59.160 Dota2DataService [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+17:32:59.163 Dota2DataService [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kendall/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+17:32:59.244 Dota2DataService [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:32:59.244 Dota2DataService [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1548 ms
+17:32:59.328 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+17:32:59.330 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+17:32:59.332 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:32:59.333 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:32:59.333 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:32:59.333 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:32:59.333 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+17:32:59.535 Dota2DataService [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+17:32:59.602 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:32:59.866 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46268f08: startup date [Tue Jul 23 17:32:57 CST 2019]; root of context hierarchy
+17:32:59.924 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueList.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueList(java.lang.Integer,java.lang.Integer)
+17:32:59.925 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueDetail.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueDetail(java.lang.Integer)
+17:32:59.928 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:32:59.928 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:32:59.960 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:32:59.960 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:32:59.978 Dota2DataService [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionController
+17:33:00.148 Dota2DataService [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+17:33:00.487 Dota2DataService [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:33:01.123 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+17:33:01.134 Dota2DataService [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:33:01.134 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+17:33:01.135 Dota2DataService [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+17:33:01.135 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:33:01.135 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+17:33:01.136 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+17:33:01.136 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@20dd5870
+17:33:01.278 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:33:01.280 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+17:33:01.280 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+17:33:01.287 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+17:33:01.288 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+17:33:01.292 Dota2DataService [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+17:33:01.292 Dota2DataService [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+17:33:01.292 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+17:33:01.298 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:33:01.320 Dota2DataService [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:33:01.334 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:33:01.339 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Started Dota2DataServiceApplication in 24.035 seconds (JVM running for 29.719)
+17:33:05.742 Dota2DataService [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:33:05.742 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:33:05.766 Dota2DataService [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+17:34:40.948 Dota2DataService [Thread-51] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46268f08: startup date [Tue Jul 23 17:32:57 CST 2019]; root of context hierarchy
+17:34:40.950 Dota2DataService [Thread-51] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+17:34:40.952 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:34:40.954 Dota2DataService [Thread-51] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+17:34:40.954 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+17:34:40.954 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:34:40.954 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+17:34:40.990 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+17:34:40.990 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+17:34:41.031 Dota2DataService [Thread-51] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:34:41.031 Dota2DataService [Thread-51] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+17:35:26.710 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Starting Dota2DataServiceApplication on luokunduodeMacBook-Pro.local with PID 1132 (/Users/kendall/GitRepo/Dota2DataService/target/classes started by kendall in /Users/kendall/GitRepo/Dota2DataService)
+17:35:26.715 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - The following profiles are active: dev
+17:35:26.748 Dota2DataService [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7203c7ff: startup date [Tue Jul 23 17:35:26 CST 2019]; root of context hierarchy
+17:35:27.287 Dota2DataService [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:35:27.559 Dota2DataService [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+17:35:27.628 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+17:35:27.630 Dota2DataService [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [application.yml] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+17:35:27.676 Dota2DataService [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+17:35:27.739 Dota2DataService [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca201e2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:35:27.851 Dota2DataService [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+17:35:27.852 Dota2DataService [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+17:35:28.167 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:35:28.177 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:35:28.185 Dota2DataService [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:35:28.186 Dota2DataService [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+17:35:28.189 Dota2DataService [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kendall/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+17:35:28.270 Dota2DataService [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:35:28.270 Dota2DataService [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1522 ms
+17:35:28.352 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+17:35:28.353 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+17:35:28.356 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:35:28.356 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:35:28.356 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:35:28.356 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:35:28.356 Dota2DataService [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+17:35:28.552 Dota2DataService [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+17:35:28.623 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:35:28.882 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7203c7ff: startup date [Tue Jul 23 17:35:26 CST 2019]; root of context hierarchy
+17:35:28.939 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueList.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueList(java.lang.Integer,java.lang.Integer)
+17:35:28.940 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/league/getLeagueDetail.json]}" onto public com.kendall.dota2dataservice.pojo.ResponseVo com.kendall.dota2dataservice.controller.Dota2LeagueController.getLeagueDetail(java.lang.Integer)
+17:35:28.942 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:35:28.943 Dota2DataService [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:35:28.974 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:35:28.974 Dota2DataService [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:35:28.991 Dota2DataService [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionController
+17:35:29.161 Dota2DataService [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+17:35:29.493 Dota2DataService [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:35:30.082 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+17:35:30.094 Dota2DataService [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:35:30.094 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+17:35:30.095 Dota2DataService [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+17:35:30.095 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:35:30.095 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+17:35:30.096 Dota2DataService [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+17:35:30.096 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@7ed8b44
+17:35:30.232 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:35:30.234 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+17:35:30.234 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+17:35:30.241 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+17:35:30.241 Dota2DataService [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+17:35:30.246 Dota2DataService [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+17:35:30.246 Dota2DataService [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+17:35:30.246 Dota2DataService [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+17:35:30.254 Dota2DataService [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:35:30.276 Dota2DataService [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:35:30.291 Dota2DataService [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:35:30.296 Dota2DataService [main] INFO  c.k.d.Dota2DataServiceApplication - Started Dota2DataServiceApplication in 23.938 seconds (JVM running for 29.786)
+17:36:12.053 Dota2DataService [Thread-51] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7203c7ff: startup date [Tue Jul 23 17:35:26 CST 2019]; root of context hierarchy
+17:36:12.055 Dota2DataService [Thread-51] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+17:36:12.059 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:36:12.060 Dota2DataService [Thread-51] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+17:36:12.061 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+17:36:12.062 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:36:12.063 Dota2DataService [Thread-51] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+17:36:12.086 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+17:36:12.087 Dota2DataService [Thread-51] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+17:36:12.094 Dota2DataService [Thread-51] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:36:12.094 Dota2DataService [Thread-51] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
