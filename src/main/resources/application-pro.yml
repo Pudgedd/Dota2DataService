@@ -1,0 +1,34 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  datasource:
+    druid:
+      db-type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/dota2_data?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: 7ujm*UHB
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 30000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select '1' from dual
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      max-pool-prepared-statement-per-connection-size: 20
+
+
+# DDService 配置
+dota2:
+  #fundata api key and secret
+  fundata:
+    key: e45a0b71353b4bf
+    secret: bdae48267b6f4e4bbbae324afff4a88
