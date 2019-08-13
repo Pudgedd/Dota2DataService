@@ -52,8 +52,8 @@ public class Dota2CrawlerJob {
 
     private int count;
 
-    //    @Scheduled(cron = "0 0 1 * * ?")
-    @Scheduled(fixedRate = 600000)
+    @Scheduled(cron = "0 0 1 * * ?")
+//    @Scheduled(fixedRate = 600000)
     private void process() {
         LOGGER.info("This is DOTA2 crawler job running {}", (count++));
         try {
@@ -122,7 +122,7 @@ public class Dota2CrawlerJob {
             Hero hero = heroes.get(i);
             hero_id++;
             Skill skill = skills.get(offset);
-            while (skill.getName().startsWith(hero.getName()) || skill.getName().startsWith(hero.getName().replaceAll("_",""))) {
+            while (skill.getName().startsWith(hero.getName()) || skill.getName().startsWith(hero.getName().replaceAll("_", ""))) {
                 skill.setHeroId(hero_id);
                 offset++;
                 skill = skills.get(offset);
@@ -130,7 +130,7 @@ public class Dota2CrawlerJob {
             while (skill.getName().startsWith("special_bonus")) {
                 skill.setHeroId(hero_id);
                 offset++;
-                if(offset >= skills.size()) break;
+                if (offset >= skills.size()) break;
                 skill = skills.get(offset);
             }
         }
