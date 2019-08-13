@@ -52,8 +52,11 @@ public class Dota2CrawlerJob {
 
     private int count;
 
+    /**
+     * 每天凌晨1点执行一次
+     */
+    //    @Scheduled(fixedRate = 600000)
     @Scheduled(cron = "0 0 1 * * ?")
-//    @Scheduled(fixedRate = 600000)
     private void process() {
         LOGGER.info("This is DOTA2 crawler job running {}", (count++));
         try {

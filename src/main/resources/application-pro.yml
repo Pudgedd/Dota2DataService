@@ -3,7 +3,7 @@ server:
   tomcat:
     uri-encoding: utf-8
   servlet:
-    context-path: Dota2DataService
+    context-path: /Dota2DataService
 
 spring:
   datasource:
