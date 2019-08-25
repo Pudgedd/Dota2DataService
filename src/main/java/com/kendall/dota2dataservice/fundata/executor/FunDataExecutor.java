@@ -42,8 +42,8 @@ public class FunDataExecutor {
         return new Form().add("page", page).add("limit", limit);
     }
 
-    protected Form makeLeagueForm(int leagueId) {
-        return new Form().add("league_id", leagueId);
+    protected Form makeLeagueForm(String vLeagueId) {
+        return new Form().add("v_league_id", vLeagueId);
     }
 
     protected Form makePlayerForm(int playerId) {

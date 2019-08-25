@@ -28,7 +28,7 @@ public interface LeagueService {
      * @param detailId
      * @return
      */
-    LeagueDetailVo getLeagueDetail(Integer detailId);
+    LeagueDetailVo getLeagueDetail(String detailId);
 
     /**
      * 获取玩家信息

@@ -47,7 +47,7 @@ public class LeagueServiceImpl implements LeagueService, InitializingBean {
     }
 
     @Override
-    public LeagueDetailVo getLeagueDetail(Integer detailId) {
+    public LeagueDetailVo getLeagueDetail(String detailId) {
         try {
             String respStr = executor.getLeagueDetail(detailId);
             ResponseVo<LeagueDetailVo> result = ResponseUtility.parseResponse(respStr, LeagueDetailVo.class);

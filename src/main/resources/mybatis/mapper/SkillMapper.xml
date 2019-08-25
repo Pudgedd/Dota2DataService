@@ -92,6 +92,12 @@
     from skill
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectByHeroId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, hero_id, img, `name`, local_name, affects, `desc`, notes, dmg, attrib,
+    cmb, lore, hurl, create_time, update_time
+    from skill
+    where hero_id = #{heroId,jdbcType=INTEGER}
+  </select>
   <select id="selectAll" resultMap="BaseResultMap">
     <!--
       WARNING - @mbg.generated

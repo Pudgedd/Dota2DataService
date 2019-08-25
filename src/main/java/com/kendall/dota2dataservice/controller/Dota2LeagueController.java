@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.constraints.NotNull;
 
 /**
- * @description:
+ * @description: 比赛数据
  * @author: kendall
  * @since: 2019/7/20
  */
@@ -29,7 +29,7 @@ public class Dota2LeagueController {
     }
 
     @GetMapping("/getLeagueDetail.json")
-    public ResponseVo getLeagueDetail(@NotNull Integer detailId) {
+    public ResponseVo getLeagueDetail(@NotNull String detailId) {
         return ResponseUtility.buildSuccessResponse(leagueService.getLeagueDetail(detailId));
     }
 

@@ -18,8 +18,8 @@ public class Dota2LeagueExecutor extends FunDataExecutor {
         return clientOperation.get("/list", makePageByPageSize(pageSize, page));
     }
 
-    public String getLeagueDetail(int leagueId) throws ClientException {
-        return clientOperation.get("/detail", makeLeagueForm(leagueId));
+    public String getLeagueDetail(String vLeagueId) throws ClientException {
+        return clientOperation.get("/detail", makeLeagueForm(vLeagueId));
     }
 
     public String getLeaguePlayer(int playerId) throws ClientException {

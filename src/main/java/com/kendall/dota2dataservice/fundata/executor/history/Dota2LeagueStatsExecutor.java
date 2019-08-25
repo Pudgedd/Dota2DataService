@@ -13,8 +13,8 @@ public class Dota2LeagueStatsExecutor extends FunDataExecutor {
         super(key, secret, "/fundata-dota2-basic/league/stats");
     }
 
-    private Form makeLeagueStatsForm(int leagueId, Integer limit, Integer offset) {
-        Form form = makeLeagueForm(leagueId);
+    private Form makeLeagueStatsForm(String vLeagueId, Integer limit, Integer offset) {
+        Form form = makeLeagueForm(vLeagueId);
         if (limit == null || offset == null) {
             return form;
         } else {
@@ -23,19 +23,19 @@ public class Dota2LeagueStatsExecutor extends FunDataExecutor {
         }
     }
 
-    public String getTeamStats(int leagueId, Integer limit, Integer offset) throws ClientException {
-        return clientOperation.get("/team", makeLeagueStatsForm(leagueId, limit, offset));
+    public String getTeamStats(String vLeagueId, Integer limit, Integer offset) throws ClientException {
+        return clientOperation.get("/team", makeLeagueStatsForm(vLeagueId, limit, offset));
     }
 
-    public String getPlayerStats(int leagueId, Integer limit, Integer offset) throws ClientException {
-        return clientOperation.get("/player", makeLeagueStatsForm(leagueId, limit, offset));
+    public String getPlayerStats(String vLeagueId, Integer limit, Integer offset) throws ClientException {
+        return clientOperation.get("/player", makeLeagueStatsForm(vLeagueId, limit, offset));
     }
 
-    public String getHeroStats(int leagueId, Integer limit, Integer offset) throws ClientException {
-        return clientOperation.get("/hero", makeLeagueStatsForm(leagueId, limit, offset));
+    public String getHeroStats(String vLeagueId, Integer limit, Integer offset) throws ClientException {
+        return clientOperation.get("/hero", makeLeagueStatsForm(vLeagueId, limit, offset));
     }
 
-    public String getItemStats(int leagueId, Integer limit, Integer offset) throws ClientException {
+    public String getItemStats(String vLeagueId, Integer limit, Integer offset) throws ClientException {
         //TODO
         return null;
     }

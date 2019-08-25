@@ -30,7 +30,7 @@ public class LeagueVo {
      * integral : 0
      */
 
-    private int leagueId;
+    private int league_id;
     private String v_league_id;
     private String league_name;
     private String organizer;
