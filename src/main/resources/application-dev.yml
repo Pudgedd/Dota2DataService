@@ -24,19 +24,3 @@ spring:
       pool-prepared-statements: true
       max-open-prepared-statements: 20
       max-pool-prepared-statement-per-connection-size: 20
-
-
-mybatis:
-  # type-aliases扫描路径
-  type-aliases-package: com.kendall.dota2dataservice.pojo.model
-  # mapper xml实现扫描路径
-  mapper-locations: classpath:mybatis/mapper/*.xml
-  configuration:
-    jdbc-type-for-null: null
-  config-location: classpath:mybatis/mybatis-config.xml
-
-# DDService 配置
-dota2:
-  #fundata api key and secret
-  key: e45a0b71353b4bf
-  secret: bdae48267b6f4e4bbbae324afff4a88
