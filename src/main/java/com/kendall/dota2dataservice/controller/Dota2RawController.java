@@ -44,7 +44,8 @@ public class Dota2RawController {
     }
 
     @GetMapping("/getHeroDetail.json")
-    public ResponseVo getHeroDetail(@NotNull Integer heroId) {
-        return ResponseUtility.buildSuccessResponse(rawDataService.getHeroDetail(heroId));
+    public ResponseVo getHeroDetail(@NotNull String name) {
+        String sName = name.substring(name.lastIndexOf("_") + 1);
+        return ResponseUtility.buildSuccessResponse(rawDataService.getHeroDetail(sName));
     }
 }

@@ -22,7 +22,7 @@ public interface RawDataService {
 
     List<Item> getItemListV2();
 
-    HeroDetailVo getHeroDetail(Integer heroId);
+    HeroDetailVo getHeroDetail(String name);
 
     Item getItemDetail(Integer itemId);
 }

@@ -85,9 +85,9 @@ public class RawDataServiceImpl implements RawDataService, InitializingBean {
     }
 
     @Override
-    public HeroDetailVo getHeroDetail(Integer heroId) {
-        Hero hero = heroMapper.selectByPrimaryKey(heroId);
-        List<Skill> skills = skillMapper.selectByHeroId(heroId);
+    public HeroDetailVo getHeroDetail(String name) {
+        Hero hero = heroMapper.selectByName(name);
+        List<Skill> skills = skillMapper.selectByHeroId(hero.getId());
 
         HeroDetailVo heroDetailVo = new HeroDetailVo();
         String attribs = hero.getAttribs();

@@ -47,4 +47,6 @@ public interface HeroMapper {
     int updateByPrimaryKey(Hero record);
 
     void batchInsert(@Param("heroes") List<Hero> heroes);
+
+    Hero selectByName(@Param("name") String name);
 }
