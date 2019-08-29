@@ -12,7 +12,7 @@
 package com.kendall.dota2dataservice.exception;
 
 import com.kendall.dota2dataservice.common.constant.ErrorType;
-import com.kendall.dota2dataservice.pojo.ResponseVo;
+import com.kendall.dota2dataservice.pojo.vo.ResponseVo;
 import com.kendall.dota2dataservice.utils.CodeMessagePair;
 import com.kendall.dota2dataservice.utils.Responsable;
 

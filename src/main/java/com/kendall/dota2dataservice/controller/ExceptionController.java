@@ -15,7 +15,7 @@ import com.kendall.dota2dataservice.common.constant.ErrorType;
 import com.kendall.dota2dataservice.exception.BusinessException;
 import com.kendall.dota2dataservice.exception.SystemException;
 import com.kendall.dota2dataservice.exception.ValidationException;
-import com.kendall.dota2dataservice.pojo.ResponseVo;
+import com.kendall.dota2dataservice.pojo.vo.ResponseVo;
 import com.kendall.dota2dataservice.utils.ResponseUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

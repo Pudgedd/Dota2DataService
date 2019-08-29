@@ -2,9 +2,9 @@ package com.kendall.dota2dataservice.service.impl;
 
 import com.google.common.collect.Lists;
 import com.kendall.dota2dataservice.common.config.Dota2Properties;
-import com.kendall.dota2dataservice.fundata.exception.ClientException;
-import com.kendall.dota2dataservice.fundata.executor.pub.Dota2LeagueExecutor;
-import com.kendall.dota2dataservice.pojo.ResponseVo;
+import com.kendall.dota2dataservice.fundatasdk.exception.ClientException;
+import com.kendall.dota2dataservice.fundatasdk.executor.pub.Dota2LeagueExecutor;
+import com.kendall.dota2dataservice.pojo.vo.ResponseVo;
 import com.kendall.dota2dataservice.pojo.vo.LeagueDetailVo;
 import com.kendall.dota2dataservice.pojo.vo.LeagueVo;
 import com.kendall.dota2dataservice.pojo.vo.PlayerVo;

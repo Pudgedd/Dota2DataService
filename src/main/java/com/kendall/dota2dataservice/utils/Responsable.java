@@ -11,7 +11,7 @@
 
 package com.kendall.dota2dataservice.utils;
 
-import com.kendall.dota2dataservice.pojo.ResponseVo;
+import com.kendall.dota2dataservice.pojo.vo.ResponseVo;
 
 /**
  * @description: 标记接口，表明对象可作为{@link ResponseVo#data}部分返回

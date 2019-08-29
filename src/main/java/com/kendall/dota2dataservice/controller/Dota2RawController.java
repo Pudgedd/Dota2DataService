@@ -1,8 +1,9 @@
 package com.kendall.dota2dataservice.controller;
 
-import com.kendall.dota2dataservice.pojo.ResponseVo;
+import com.kendall.dota2dataservice.pojo.vo.ResponseVo;
 import com.kendall.dota2dataservice.service.RawDataService;
 import com.kendall.dota2dataservice.utils.ResponseUtility;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -45,7 +46,7 @@ public class Dota2RawController {
 
     @GetMapping("/getHeroDetail.json")
     public ResponseVo getHeroDetail(@NotNull String name) {
-        String sName = name.substring(name.lastIndexOf("_") + 1);
+        String sName = name.replaceAll("npc_dota_hero_", StringUtils.EMPTY);
         return ResponseUtility.buildSuccessResponse(rawDataService.getHeroDetail(sName));
     }
 }

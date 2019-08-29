@@ -15,7 +15,7 @@ import com.google.common.reflect.TypeParameter;
 import com.google.common.reflect.TypeToken;
 import com.kendall.dota2dataservice.common.constant.CommonConstants;
 import com.kendall.dota2dataservice.exception.SystemException;
-import com.kendall.dota2dataservice.pojo.ResponseVo;
+import com.kendall.dota2dataservice.pojo.vo.ResponseVo;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 

@@ -16,7 +16,7 @@ mybatis:
 
 # DDService 配置
 dota2:
-  #fundata api key and secret
+  #fundatasdk api key and secret
   key: e45a0b71353b4bf
   secret: bdae48267b6f4e4bbbae324afff4a88
 

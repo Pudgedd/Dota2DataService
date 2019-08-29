@@ -1,6 +1,6 @@
 package com.kendall.dota2dataservice.controller;
 
-import com.kendall.dota2dataservice.pojo.ResponseVo;
+import com.kendall.dota2dataservice.pojo.vo.ResponseVo;
 import com.kendall.dota2dataservice.service.LeagueService;
 import com.kendall.dota2dataservice.utils.ResponseUtility;
 import org.springframework.beans.factory.annotation.Autowired;
