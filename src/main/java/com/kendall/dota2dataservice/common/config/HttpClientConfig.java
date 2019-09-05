@@ -1,5 +1,6 @@
 package com.kendall.dota2dataservice.common.config;
 
+import com.kendall.dota2dataservice.job.IdleConnectionMonitorThread;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -64,6 +65,9 @@ public class HttpClientConfig {
         HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
 
         httpClientBuilder.setConnectionManager(httpClientConnectionManager);
+
+        //启动线程，5秒钟清空一次失效连接
+        new IdleConnectionMonitorThread(httpClientConnectionManager).start();
 
         return httpClientBuilder;
     }
