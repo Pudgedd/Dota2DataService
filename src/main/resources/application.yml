@@ -3,8 +3,6 @@ spring:
     active: pro
 
 
-
-
 mybatis:
   # type-aliases扫描路径
   type-aliases-package: com.kendall.dota2dataservice.pojo.model

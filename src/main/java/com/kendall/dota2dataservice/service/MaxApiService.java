@@ -17,4 +17,6 @@ public interface MaxApiService {
     String getLeagueList(Integer offset, Integer limit) throws Exception;
 
     String getLeagueMatches(String leagueId) throws Exception;
+
+    String getVerifiedList(Integer offset, Integer limit) throws Exception;
 }
