@@ -13,7 +13,7 @@ import java.util.Date;
 public class Dota2MatchExecutor extends FunDataExecutor {
 
     public Dota2MatchExecutor(String key, String secret) {
-        super(key, secret, "/fundatasdk-dota2-free/v2/match");
+        super(key, secret, "/fundata-dota2-free/v2/match");
     }
 
     public String getMatchBasicInfo(int matchId) throws ClientException {

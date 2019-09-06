@@ -10,7 +10,7 @@ import com.kendall.dota2dataservice.fundatasdk.executor.FunDataExecutor;
 public class Dota2RawExecutor extends FunDataExecutor {
 
     public Dota2RawExecutor(String key, String secret) {
-        super(key, secret, "/fundatasdk-dota2-free/v2/raw");
+        super(key, secret, "/fundata-dota2-free/v2/raw");
     }
 
     public String getRawHero() throws ClientException {

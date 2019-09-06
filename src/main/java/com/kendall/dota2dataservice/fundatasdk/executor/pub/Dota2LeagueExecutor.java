@@ -11,7 +11,7 @@ public class Dota2LeagueExecutor extends FunDataExecutor {
 
 
     public Dota2LeagueExecutor(String key, String secret) {
-        super(key, secret, "/fundatasdk-dota2-free/v2/league");
+        super(key, secret, "/fundata-dota2-free/v2/league");
     }
 
     public String getLeagueList(int pageSize, int page) throws ClientException {

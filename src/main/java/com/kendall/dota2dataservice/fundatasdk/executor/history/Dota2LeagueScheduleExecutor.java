@@ -9,7 +9,7 @@ import com.kendall.dota2dataservice.fundatasdk.exception.ClientException;
  */
 public class Dota2LeagueScheduleExecutor extends FunDataExecutor {
     public Dota2LeagueScheduleExecutor(String key, String secret) {
-        super(key, secret, "/fundatasdk-dota2-basic/league/schedule");
+        super(key, secret, "/fundata-dota2-basic/league/schedule");
     }
 
     public String getScheduleList() throws ClientException {

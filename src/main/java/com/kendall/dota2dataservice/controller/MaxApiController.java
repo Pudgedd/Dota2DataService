@@ -34,4 +34,14 @@ public class MaxApiController {
     public String getItemDetail(String name) throws Exception {
         return maxApiService.getItemDetail(name);
     }
+
+    @GetMapping(value = "/max/getLeagueList.json")
+    public String getLeagueList(Integer offset, Integer limit) throws Exception {
+        return maxApiService.getLeagueList(offset, limit);
+    }
+
+    @GetMapping(value = "/max/getLeagueMatches.json")
+    public String getLeagueMatches(String leagueId) throws Exception {
+        return maxApiService.getLeagueMatches(leagueId);
+    }
 }

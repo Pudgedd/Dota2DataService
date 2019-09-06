@@ -9,7 +9,7 @@ import com.kendall.dota2dataservice.fundatasdk.executor.FunDataExecutor;
  */
 public class Dota2LeagueLiveExecutor extends FunDataExecutor {
     public Dota2LeagueLiveExecutor(String key, String secret) {
-        super(key, secret, "/fundatasdk-dota2-pro/v2/league/live");
+        super(key, secret, "/fundata-dota2-pro/v2/league/live");
     }
 
     public String getLiveScoreboard(int matchId) throws ClientException {

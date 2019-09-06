@@ -10,7 +10,7 @@ import com.kendall.dota2dataservice.fundatasdk.exception.ClientException;
  */
 public class Dota2LeagueStatsExecutor extends FunDataExecutor {
     public Dota2LeagueStatsExecutor(String key, String secret) {
-        super(key, secret, "/fundatasdk-dota2-basic/league/stats");
+        super(key, secret, "/fundata-dota2-basic/league/stats");
     }
 
     private Form makeLeagueStatsForm(String vLeagueId, Integer limit, Integer offset) {

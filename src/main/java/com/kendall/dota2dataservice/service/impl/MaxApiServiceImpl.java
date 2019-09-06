@@ -20,6 +20,8 @@ public class MaxApiServiceImpl implements MaxApiService {
     public static final String URI_HERO_STAT = "https://api.maxjia.com/api/hero/stat/v3/";
     public static final String URI_ITEM_STAT = "https://api.maxjia.com/api/item/stat/v2/";
     private static final String URI_ITEM_DETAIL = "https://api.maxjia.com/api/item/detail/overview/";
+    private static final String URI_LEAGUE_LIST = "https://api.maxjia.com/api/league/get_league_list/";
+    private static final String URI_LEAGUE_MATCHES = "https://api.maxjia.com/api/league/get_league_matches/";
 
     @Autowired
     private HttpClientUtil httpClientUtil;
@@ -56,6 +58,24 @@ public class MaxApiServiceImpl implements MaxApiService {
         return httpClientUtil.doGet(URI_ITEM_DETAIL, params);
     }
 
+    @Cacheable(value = "leagueList")
+    @Override
+    public String getLeagueList(Integer offset, Integer limit) throws Exception {
+        Map<String, Object> params = getRequestParams();
+        params.put("offset", offset);
+        params.put("limit", limit);
+
+        return httpClientUtil.doGet(URI_LEAGUE_LIST, params);
+    }
+
+    @Cacheable(value = "leagueMatches", key = "#leagueId")
+    @Override
+    public String getLeagueMatches(String leagueId) throws Exception {
+        Map<String, Object> params = getRequestParams();
+        params.put("leagueid", leagueId);
+
+        return httpClientUtil.doGet(URI_LEAGUE_MATCHES, params);
+    }
 
     private Map<String, Object> getRequestParams() {
         Map<String, Object> params = Maps.newHashMap();

@@ -13,4 +13,8 @@ public interface MaxApiService {
     String getHeroDetail(String name) throws Exception;
 
     String getItemDetail(String name) throws Exception;
+
+    String getLeagueList(Integer offset, Integer limit) throws Exception;
+
+    String getLeagueMatches(String leagueId) throws Exception;
 }
