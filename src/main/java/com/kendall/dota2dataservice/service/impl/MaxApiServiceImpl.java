@@ -3,6 +3,8 @@ package com.kendall.dota2dataservice.service.impl;
 import com.google.common.collect.Maps;
 import com.kendall.dota2dataservice.service.MaxApiService;
 import com.kendall.dota2dataservice.utils.HttpClientUtil;
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.ibatis.reflection.ArrayUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -17,8 +19,8 @@ import java.util.Map;
 @Service
 public class MaxApiServiceImpl implements MaxApiService {
     private static final String URI_HERO_DETAIL = "https://api.maxjia.com/api/hero/detail/overview/";
-    public static final String URI_HERO_STAT = "https://api.maxjia.com/api/hero/stat/v3/";
-    public static final String URI_ITEM_STAT = "https://api.maxjia.com/api/item/stat/v2/";
+    private static final String URI_HERO_STAT = "https://api.maxjia.com/api/hero/stat/v3/";
+    private static final String URI_ITEM_STAT = "https://api.maxjia.com/api/item/stat/v2/";
     private static final String URI_ITEM_DETAIL = "https://api.maxjia.com/api/item/detail/overview/";
     private static final String URI_LEAGUE_LIST = "https://api.maxjia.com/api/league/get_league_list/";
     private static final String URI_LEAGUE_MATCHES = "https://api.maxjia.com/api/league/get_league_matches/";
@@ -41,7 +43,7 @@ public class MaxApiServiceImpl implements MaxApiService {
         return httpClientUtil.doGet(URI_ITEM_STAT, params);
     }
 
-    @Cacheable(value = "heroDetail")
+    @Cacheable(value = "heroDetail", key = "#name")
     @Override
     public String getHeroDetail(String name) throws Exception {
         Map<String, Object> params = getRequestParams();
@@ -50,7 +52,7 @@ public class MaxApiServiceImpl implements MaxApiService {
         return httpClientUtil.doGet(URI_HERO_DETAIL, params);
     }
 
-    @Cacheable(value = "itemDetail")
+    @Cacheable(value = "itemDetail", key = "#name")
     @Override
     public String getItemDetail(String name) throws Exception {
         Map<String, Object> params = getRequestParams();
@@ -78,7 +80,6 @@ public class MaxApiServiceImpl implements MaxApiService {
         return httpClientUtil.doGet(URI_LEAGUE_MATCHES, params);
     }
 
-    @Cacheable(value = "verifiedList", key = "#offset+':'+#limit")
     @Override
     public String getVerifiedList(Integer offset, Integer limit) throws Exception {
         Map<String, Object> params = getRequestParams();
