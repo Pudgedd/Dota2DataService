@@ -10,6 +10,8 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -24,6 +26,7 @@ import java.util.Map;
  */
 @Component
 public class HttpClientUtil {
+    private static final Logger LOGGER = LoggerFactory.getLogger(HttpClientUtil.class);
 
     @Autowired
     private CloseableHttpClient httpClient;
@@ -46,13 +49,14 @@ public class HttpClientUtil {
         // 装载配置信息
         httpGet.setConfig(config);
 
-        // 发起请求
-        CloseableHttpResponse response = this.httpClient.execute(httpGet);
-
-        // 判断状态码是否为200
-        if (response.getStatusLine().getStatusCode() == 200) {
-            // 返回响应体的内容
-            return EntityUtils.toString(response.getEntity(), "UTF-8");
+        try (CloseableHttpResponse response = this.httpClient.execute(httpGet)) {
+            // 判断状态码是否为200
+            if (response.getStatusLine().getStatusCode() == 200) {
+                // 返回响应体的内容
+                return EntityUtils.toString(response.getEntity(), "UTF-8");
+            }
+        } catch (Exception e) {
+            LOGGER.error("do get error", e);
         }
         return null;
     }
@@ -107,12 +111,16 @@ public class HttpClientUtil {
         }
 
         // 发起请求
-        CloseableHttpResponse response = this.httpClient.execute(httpPost);
-        // 判断状态码是否为200
-        if (response.getStatusLine().getStatusCode() == 200) {
-            // 返回响应体的内容
-            return EntityUtils.toString(response.getEntity(), "UTF-8");
+        try (CloseableHttpResponse response = this.httpClient.execute(httpPost)) {
+            // 判断状态码是否为200
+            if (response.getStatusLine().getStatusCode() == 200) {
+                // 返回响应体的内容
+                return EntityUtils.toString(response.getEntity(), "UTF-8");
+            }
+        } catch (Exception e) {
+            LOGGER.error("do post error", e);
         }
+
         return null;
     }
 

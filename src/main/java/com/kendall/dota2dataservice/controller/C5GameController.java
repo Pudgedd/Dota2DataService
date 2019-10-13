@@ -22,7 +22,7 @@ public class C5GameController {
     }
 
     @GetMapping(value = "/c5/getStoreList.json")
-    public String getOptionList(StoreOptionBean option) throws Exception {
+    public String getStoreList(StoreOptionBean option) throws Exception {
         return c5GameApiService.getStoreList(option);
     }
 }
